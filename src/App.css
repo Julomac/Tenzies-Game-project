@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  
+}
+
+
+.allApp{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+  background-color: #2b8efffb;
+}
+
+
+.mainBoard{
+  background-color: #e0e0e0fd;
+  border-top: 30px solid #0B2434;
+  border-bottom: 30px solid #0B2434;
+  border-right: 20px solid #0B2434;
+  border-left: 20px solid #0B2434;
+  border-radius: 3px;
+  width: 360px;
+  height: 379px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
+
+.title{
+  margin: 0;
+  text-align: center;
+  color: #2B283A;
+  font-family: 'Inter', sans-serif;
+}
+
+.rules{
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  color: #4A4E74;
+  font-family: 'Karla', sans-serif;
+}
+.dice{
+  
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+}
+.row-1, .row-2{ 
+  display: flex;
+}
+
+.dice{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.allDice{
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+}
+
+.rollButton{
+  width: 90px;
+  padding: 8px;
+  margin: auto;
+  background-color: #5035FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  
+}
