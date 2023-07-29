@@ -8,7 +8,6 @@ body {
   
 }
 
-
 .allApp{
   display: flex;
   justify-content: center; 
@@ -33,7 +32,6 @@ body {
   padding-bottom: 33px;
 }
 
-
 .title{
   margin: 0;
   text-align: center;
@@ -48,31 +46,41 @@ body {
   color: #4A4E74;
   font-family: 'Karla', sans-serif;
 }
-.dice{
-  
-  width: 35px;
-  height: 35px;
-  margin: 10px;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
-  font-family: 'Karla', sans-serif;
-  font-weight: 700;
-}
-.row-1, .row-2{ 
+
+.allDice{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  
 }
 
 .dice{
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  background-color: #FFFFFF;
+}
+.clickedDice{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  background-color: #4d34ee;
   
 }
-.allDice{
-  width: 270px;
-  display: flex;
-  flex-direction: column;
-  margin: 10px auto;
-}
+
 
 .rollButton{
   width: 90px;
@@ -83,4 +91,24 @@ body {
   border: none;
   border-radius: 5px;
   
+}
+
+
+
+
+.clickedDice:hover{
+  background-color: #3624ac;
+}
+.dice:hover{
+  transform: scale(1.07);
+  background-color: rgb(202, 202, 202);
+}
+.dice:active,.clickedDice:active{
+  background-color: rgb(172, 172, 172);
+}
+.rollButton:hover{
+  transform: scale(1.04)
+}
+.rollButton:active{
+  background-color: #2d1c99;
 }

@@ -1,25 +1,32 @@
 import React from "react"
+import PropTypes from 'prop-types';
 
-export default  function Dice(){
+export default  function Dice(props){
+
+    
+    
+    
+    const allDices = props.dices.map((die) => (
+        <div 
+        onClick={()=> props.clickHandler(die.key)} 
+        key={die.key} className={die.clicked ? "clickedDice" : "dice"}>{die.number}</div>
+      ))
 
     return(
-        <div className="allDice">
-            <div className="row-1">
-                <div className="dice" >1</div>
-                <div className="dice" >2</div>
-                <div className="dice" >3</div>
-                <div className="dice" >5</div>
-                <div className="dice" >6</div>
-            </div>
-            <div className="row-2">
-                <div className="dice" >4</div>
-                <div className="dice" >2</div>
-                <div className="dice" >6</div>
-                <div className="dice" >1</div>
-                <div className="dice" >4</div>
-            </div>
         
+        <div className="allDice">
+            {allDices}
         </div>
     )
 
+
 }
+
+Dice.propTypes = {
+    dices: PropTypes.arrayOf(
+      PropTypes.shape({
+        clicked: PropTypes.bool.isRequired,
+        number: PropTypes.number.isRequired
+      })
+    ).isRequired
+  }
