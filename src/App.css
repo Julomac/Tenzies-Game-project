@@ -90,10 +90,23 @@ body {
   color: #FFFFFF;
   border: none;
   border-radius: 5px;
+  margin-top:5px ;
   
 }
-
-
+.restartBox{
+  display: flex;
+  justify-content: center;
+}
+.restartButton{
+  width: 90px;
+  padding: 8px;
+  margin: auto;
+  background-color: #5035FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  margin-top:5px;
+}
 
 
 .clickedDice:hover{
